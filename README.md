@@ -1,6 +1,6 @@
 # TheWeather
 ETİYA
-OpenWeather API'si çekildi parse edildi.
-DATABASE Havadurumu bilgileri kaydediliyor.
-Servislerin çoğu tamamlandı.
-Siteye erişim rolleri ve Login - Registiration eklenicek.
+1- OpenWeather API'si çekildi parse edildi.
+2- DATABASE Havadurumu bilgileri kaydediliyor.
+3- Servislerin çoğu tamamlandı.
+4- Siteye erişim rolleri ve Login - Registiration eklenicek.
