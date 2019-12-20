@@ -2,54 +2,36 @@ package com.yilmazakkan.TheWeather.entity;
 
 import javax.persistence.*;
 import java.util.Objects;
-
 @Entity
-@Table(name = "user_db")
+@Table(name = "user_db",indexes = {@Index(name = "idx_username",columnList = "username")})
 public class User {
-
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @Column(name = "username")
     private String userName;
-
     @Column(name = "pwd")
     private String password;
 
-    @Column(name = "user_role")
-    @Enumerated(EnumType.STRING)
+    @JoinColumn(name = "role_id")
+    @ManyToOne (fetch = FetchType.LAZY)
     private UserRole userRole;
 
     public User() {
     }
-
-    public User(Long id, String userName, String password, UserRole userRole) {
-        super();
-        this.id = id;
-        this.userName = userName;
-        this.password = password;
-        this.userRole = userRole;
-    }
-
-
     public Long getId() {
         return id;
     }
-
     public void setId(Long id) {
         this.id = id;
     }
-
     public String getUserName() {
         return userName;
     }
-
     public void setUserName(String userName) {
         this.userName = userName;
     }
-
     public String getPassword() {
         return password;
     }
@@ -72,21 +54,21 @@ public class User {
                 "id=" + id +
                 ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
+                ", userRole=" + userRole +
                 '}';
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof User)) return false;
         User user = (User) o;
-        return id == user.id &&
-                Objects.equals(userName, user.userName) &&
-                Objects.equals(password, user.password);
+        return Objects.equals(getId(), user.getId()) &&
+                Objects.equals(getUserName(), user.getUserName()) &&
+                Objects.equals(getPassword(), user.getPassword()) &&
+                Objects.equals(getUserRole(), user.getUserRole());
     }
-
     @Override
     public int hashCode() {
-        return Objects.hash(id, userName, password, userRole);
+        return Objects.hash(getId(), getUserName(), getPassword(), getUserRole());
     }
 }

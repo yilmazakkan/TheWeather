@@ -23,6 +23,16 @@ public class Weather extends BaseEntity {
     private String sunsetTime;
     private String date;
 
+    @JoinColumn(name = "city_id")
+    @ManyToOne(optional = true, fetch = FetchType.LAZY)
+    private City city_id;
+
+    @JoinColumn(name = "user_id")
+    @OneToOne(optional = true, fetch = FetchType.LAZY)
+    private User user;
+
+
+
     public String getDate() {
         return date;
     }
