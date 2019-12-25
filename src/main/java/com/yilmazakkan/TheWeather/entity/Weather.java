@@ -12,6 +12,7 @@ public class Weather extends BaseEntity {
     private Long weather_log_id;
     @Column(name = "log_city")
     private String city;
+    private String country;
     @Column(name = "weather_description")
     private String description;
     @Column(name = "log_temperature")
@@ -23,6 +24,16 @@ public class Weather extends BaseEntity {
     private String sunsetTime;
     private String date;
     private String ip;
+    private Long requestTime;
+
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
 
     @JoinColumn(name = "city_id")
     @ManyToOne(optional = true, fetch = FetchType.LAZY)
@@ -38,6 +49,15 @@ public class Weather extends BaseEntity {
 
     public void setIp(String ip) {
         this.ip = ip;
+
+    }
+
+    public Long getRequestTime() {
+        return requestTime;
+    }
+
+    public void setRequestTime(Long requestTime) {
+        this.requestTime = requestTime;
     }
 
     public String getDate() {

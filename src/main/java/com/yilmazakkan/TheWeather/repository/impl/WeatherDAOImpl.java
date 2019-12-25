@@ -41,8 +41,7 @@ public class WeatherDAOImpl implements WeatherDAO {
 
             // reads system IPAddress
             systemipaddress = sc.readLine().trim();
-
-
+            
 
             weather.setIp(systemipaddress);
 

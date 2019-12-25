@@ -56,6 +56,9 @@ public class JsonWeatherParser {
             String sunsetTime = new java.text.SimpleDateFormat("HH:mm")
                     .format(new java.util.Date(sunset * 1000));
 
+            weather.setCountry (String.valueOf(sysArray.get("country")));
+
+
             weather.setSunriseTime(sunriseTime);
             weather.setSunsetTime(sunsetTime);
             weather.setDate(queryTime);

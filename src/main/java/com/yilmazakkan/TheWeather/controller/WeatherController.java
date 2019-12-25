@@ -25,8 +25,12 @@ public class WeatherController {
   //  localhost:9000/weather/tokyo
     @RequestMapping(value = "/weather/{city}", method = {RequestMethod.GET})
     public Weather currentWeather(@PathVariable String city) throws IOException, ParseException, JSONException, org.json.simple.parser.ParseException {
-
+        long startTime = System.currentTimeMillis();
         Weather wt = weatherService.getCurrentWeather(city);
+
+        long elapsedTime = System.currentTimeMillis() - startTime;
+        wt.setRequestTime(elapsedTime);
+        System.out.print("---------------------------- " + elapsedTime);
         weatherService.save(wt);
         return  wt;
     }

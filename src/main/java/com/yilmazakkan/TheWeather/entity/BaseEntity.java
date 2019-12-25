@@ -41,4 +41,5 @@ public abstract class BaseEntity implements Serializable {
     public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
     }
+
 }
