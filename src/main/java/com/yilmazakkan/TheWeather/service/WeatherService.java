@@ -4,10 +4,11 @@ import com.yilmazakkan.TheWeather.entity.Weather;
 import org.json.JSONException;
 
 import java.io.IOException;
+import java.net.UnknownHostException;
 import java.text.ParseException;
 
 public interface WeatherService {
 
     Weather getCurrentWeather(String city) throws IOException, ParseException, JSONException, org.json.simple.parser.ParseException;
-    public Weather save(Weather weather);
+    public Weather save(Weather weather) throws IOException;
 }

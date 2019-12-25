@@ -22,6 +22,7 @@ public class Weather extends BaseEntity {
     private String sunriseTime;
     private String sunsetTime;
     private String date;
+    private String ip;
 
     @JoinColumn(name = "city_id")
     @ManyToOne(optional = true, fetch = FetchType.LAZY)
@@ -31,7 +32,13 @@ public class Weather extends BaseEntity {
     @OneToOne(optional = true, fetch = FetchType.LAZY)
     private User user;
 
+    public String getIp() {
+        return ip;
+    }
 
+    public void setIp(String ip) {
+        this.ip = ip;
+    }
 
     public String getDate() {
         return date;
@@ -126,6 +133,7 @@ public class Weather extends BaseEntity {
                 ", sunriseTime='" + sunriseTime + '\'' +
                 ", sunsetTime='" + sunsetTime + '\'' +
                 ", date='" + date + '\'' +
+                ",ip='"+ ip+'\''+
                 '}';
     }
 }

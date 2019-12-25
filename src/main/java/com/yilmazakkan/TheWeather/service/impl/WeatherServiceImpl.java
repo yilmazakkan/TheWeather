@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.net.UnknownHostException;
 import java.text.ParseException;
 
 
@@ -32,7 +33,7 @@ public class WeatherServiceImpl implements WeatherService {
     }
 
 
-    public Weather save(Weather weather) {
+    public Weather save(Weather weather) throws IOException {
         weatherDAO.save(weather);
         return weather;
     }

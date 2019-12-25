@@ -1,5 +1,7 @@
 package com.yilmazakkan.TheWeather.entity;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Temporal;
@@ -13,6 +15,7 @@ public abstract class BaseEntity implements Serializable {
     @Column(name = "created_by", length = 50)
     private String createdBy;
 
+    @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "created_at")
     private Date createdAt;
