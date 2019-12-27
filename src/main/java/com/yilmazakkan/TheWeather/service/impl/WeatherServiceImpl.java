@@ -16,6 +16,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.UnknownHostException;
 import java.text.ParseException;
+import java.util.List;
 
 
 @Service
@@ -38,6 +39,20 @@ public class WeatherServiceImpl implements WeatherService {
         return weather;
     }
 
+    public List<Weather> findAll(){
+
+        return weatherDAO.findAll();
+    }
+
+    @Override
+    public List<Weather> findByCity(String city) {
+        return weatherDAO.findByCity(city);
+    }
+
+    @Override
+    public Weather findById(long id) {
+        return weatherDAO.findById(id);
+    }
 
     private Weather getWeatherFromJson(String json)
             throws ParseException, org.json.simple.parser.ParseException, JSONException {
