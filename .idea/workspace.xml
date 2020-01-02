@@ -2,70 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abb19de5-ec0b-4eb5-907c-808a7fb40c70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/app-layout/app-layout.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/app-layout/app-layout.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/app-layout/app-layout.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/logs/logs.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/logs/logs.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/logs/logs.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/logs/logs.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/logs/logs.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/logs/logs.routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/weather/weather.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/weather/weather.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/weather/weather.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/weather/weather.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/weather/weather.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/weather/weather.routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webui/tslint.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheWeather.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TheWeather.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/controller/WeatherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/entity/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/entity/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/repository/WeatherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/repository/WeatherDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/repository/impl/WeatherDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/repository/impl/WeatherDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/service/JsonWeatherParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/service/JsonWeatherParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/service/WeatherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/service/impl/WeatherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/service/impl/WeatherServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/controller/WeatherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/controller/WeatherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/entity/Weather.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/entity/Weather.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/repository/WeatherDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/repository/WeatherDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/repository/impl/WeatherDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/repository/impl/WeatherDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/service/JsonWeatherParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/service/JsonWeatherParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/service/WeatherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/service/WeatherService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/service/impl/WeatherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/service/impl/WeatherServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/pages/weather/weather.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/app/pages/weather/weather.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/pages/weather/weather.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/app/pages/weather/weather.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/pages/weather/weather.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/app/pages/weather/weather.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/pages/weather/weather.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/app/pages/weather/weather.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,15 +85,15 @@
     <property name="ts.external.directory.path" value="C:\Users\yilma\Documents\TheWeather\src\webui\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yilma\Documents\TheWeather\src\webui\src\app\_layout" />
+      <recent name="C:\Users\yilma\Documents\TheWeather\src\main\java\com\yilmazakkan\TheWeather\entity" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yilma\Documents\TheWeather\src\webui\src\app\_layout\app-layout" />
       <recent name="C:\Users\yilma\Documents\TheWeather\src\webui\src\app\pages\weather" />
       <recent name="C:\Users\yilma\Documents\TheWeather\src\webui\src\app\pages\logs" />
       <recent name="C:\Users\yilma\Desktop\TheWeather\src\main\java\com\yilmazakkan\TheWeather" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\yilma\Documents\TheWeather\src\webui\src\app\_layout" />
-      <recent name="C:\Users\yilma\Documents\TheWeather\src\main\java\com\yilmazakkan\TheWeather\entity" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
@@ -215,7 +163,8 @@
       <workItem from="1577191542108" duration="4214000" />
       <workItem from="1577264724980" duration="11653000" />
       <workItem from="1577342603058" duration="14297000" />
-      <workItem from="1577429899955" duration="10385000" />
+      <workItem from="1577429899955" duration="10614000" />
+      <workItem from="1577969360839" duration="6506000" />
     </task>
     <task id="LOCAL-00001" summary="Entityler Repository Service Controller ve OpenWeather API çekme yapıldı.">
       <created>1576744095705</created>
@@ -245,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577285363755</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Angular">
+      <created>1577458542265</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577458542265</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +213,8 @@
     <MESSAGE value="User roles table" />
     <MESSAGE value="User and Roles relationship and find IP" />
     <MESSAGE value="Weather Country" />
-    <option name="LAST_COMMIT_MESSAGE" value="Weather Country" />
+    <MESSAGE value="Angular" />
+    <option name="LAST_COMMIT_MESSAGE" value="Angular" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="178" key="#Inspections" timestamp="1577099762938">
@@ -282,45 +239,46 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2610" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576842923298" />
-    <state x="-1425" y="114" key="CommitChangelistDialog2" timestamp="1577285363238">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="495" y="114" key="CommitChangelistDialog2" timestamp="1577458539188">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1425" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1577285363238" />
+    <state x="495" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577458539188" />
     <state x="2415" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576853040536" />
-    <state x="-1225" y="427" key="FileChooserDialogImpl" timestamp="1577449808895">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="2615" y="427" key="FileChooserDialogImpl" timestamp="1577971925982">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1225" y="427" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1577449808895" />
     <state x="695" y="427" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577186118223" />
-    <state x="2615" y="427" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576847588216" />
+    <state x="2615" y="427" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577971925982" />
     <state x="2753" y="413" width="531" height="214" key="Github.ShareDialog" timestamp="1576742658751">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2753" y="413" width="531" height="214" key="Github.ShareDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576742658751" />
-    <state width="1877" height="178" key="GridCell.Tab.0.bottom" timestamp="1577451348614">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="178" key="GridCell.Tab.0.bottom" timestamp="1577975497748">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="178" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1577451348614" />
     <state width="1877" height="246" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577195754929" />
-    <state width="1877" height="113" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577277556425" />
-    <state width="1877" height="178" key="GridCell.Tab.0.center" timestamp="1577451348614">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="178" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577975497748" />
+    <state width="1877" height="178" key="GridCell.Tab.0.center" timestamp="1577975497748">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="178" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1577451348614" />
     <state width="1877" height="246" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577195754929" />
-    <state width="1877" height="113" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577277556425" />
-    <state width="1877" height="178" key="GridCell.Tab.0.left" timestamp="1577451348614">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="178" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577975497748" />
+    <state width="1877" height="178" key="GridCell.Tab.0.left" timestamp="1577975497748">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="178" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1577451348614" />
     <state width="1877" height="246" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577195754929" />
-    <state width="1877" height="113" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577277556425" />
-    <state width="1877" height="178" key="GridCell.Tab.0.right" timestamp="1577451348614">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="178" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577975497748" />
+    <state width="1877" height="178" key="GridCell.Tab.0.right" timestamp="1577975497748">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="178" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1577451348614" />
     <state width="1877" height="246" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577195754929" />
-    <state width="1877" height="113" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577277556425" />
+    <state width="1877" height="178" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577975497748" />
     <state width="1877" height="178" key="GridCell.Tab.1.bottom" timestamp="1577371912860">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -353,10 +311,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="162" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576744002546" />
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1577286035188">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1577458546671">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1577286035188" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577458546671" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576853045931" />
     <state x="-1288" y="215" width="1076" height="754" key="dock-window-1" timestamp="1576847561752">
       <screen x="-1920" y="0" width="1920" height="1040" />
