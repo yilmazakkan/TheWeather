@@ -1,6 +1,6 @@
 package com.yilmazakkan.TheWeather.controller;
 
-import com.yilmazakkan.TheWeather.entity.User;
+
 import com.yilmazakkan.TheWeather.entity.Weather;
 import com.yilmazakkan.TheWeather.service.WeatherService;
 import org.json.JSONException;
@@ -13,6 +13,7 @@ import java.util.List;
 
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class WeatherController {
 
     private final WeatherService weatherService;
