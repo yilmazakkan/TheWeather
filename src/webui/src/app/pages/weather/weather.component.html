@@ -7,14 +7,16 @@
             <h2>Hava Durumu</h2>
           </div>
           <div class="panel-body">
-            <div class="form-group">
-              <label>City: </label>
-              <input type="text" class="form-control" id="city" [(ngModel)]="cityName" name="city">
-              <button class="btn btn-primary" (click)="getWeather(cityName)">Get Weather</button>
-                <button  class="btn btn-primary" [routerLink]="['logs']">Logs</button>
+            <div class="input-group mb-3" style="padding-right:80%;">
+
+             <input type="text" class="form-control" id="city" [(ngModel)]="cityName" name="city" placeholder="City Name" >
+              <div class="input-group-append">
+              <button  class="btn btn-success" (click)="getWeather(cityName); visibleRrowIndex=0;">Get Weather</button>
+              </div>
 
             </div>
-            <table class="table table-striped">
+            <div [hidden]="visibleRrowIndex!==0" class="panel-body">
+            <table class="table table-striped" id="titles">
               <thead>
               <tr>
                <th></th>

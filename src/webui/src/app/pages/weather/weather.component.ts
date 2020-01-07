@@ -12,7 +12,7 @@ import {WeatherService} from "../../services/shared/weather.service";
 export class WeatherComponent implements OnInit {
 
   weathers: Weather;
-
+  visibleRrowIndex: number =null;
   @Input() weather: Weather;
   cityName: string;
 

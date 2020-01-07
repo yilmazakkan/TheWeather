@@ -5,6 +5,7 @@ import com.yilmazakkan.TheWeather.entity.Weather;
 import com.yilmazakkan.TheWeather.service.WeatherService;
 import org.json.JSONException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
@@ -68,6 +69,17 @@ public class WeatherController {
             throw new RuntimeException("City not found - " + city);
         }
         return weather;
+    }
+    @DeleteMapping("/weathers/log/{id}")
+
+    public String deleteLogWeather(@PathVariable Long id) {
+        Weather weather = weatherService.findById(id);
+        // throw exception if null
+        if (weather == null) {
+            throw new RuntimeException("Log id not found - " + id);
+        }
+        weatherService.deleteById(id);
+        return "Deleted log id - " + id;
     }
 }
 

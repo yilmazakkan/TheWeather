@@ -7,9 +7,9 @@ import javax.persistence.*;
 public class Weather extends BaseEntity {
 
     @Id
-    @Column(name = "weather_log_id")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long weather_log_id;
+    private Long id;
     @Column(name = "city")
     private String city;
     private String country;
@@ -101,12 +101,12 @@ public class Weather extends BaseEntity {
         this.sunriseTime = sunriseTime;
     }
 
-    public Long getWeather_log_id() {
-        return weather_log_id;
+    public Long getId() {
+        return id;
     }
 
-    public void setWeather_log_id(Long weather_log_id) {
-        this.weather_log_id = weather_log_id;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getSunsetTime() {
@@ -160,7 +160,7 @@ public class Weather extends BaseEntity {
     @Override
     public String toString() {
         return "Weather{" +
-                "weather_log_id=" + weather_log_id +
+                "id=" + id +
                 ", city='" + city + '\'' +
                 ", description='" + description + '\'' +
                 ", temperature='" + temperature + '\'' +

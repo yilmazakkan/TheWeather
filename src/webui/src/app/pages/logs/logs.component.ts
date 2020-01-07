@@ -11,6 +11,7 @@ import {LogsService} from "../../services/shared/logs.service";
 export class LogsComponent implements OnInit {
 
   weathers: Weather[]=[];
+  filterText: string;
 
 
 
@@ -21,4 +22,12 @@ export class LogsComponent implements OnInit {
       this.logsService.getAll().subscribe(res => {      this.weathers = res;    });
 }
   }
+  deleteLog(value) {
+    return this.logsService.delete(value).subscribe(response => {
+      this.logsService.getAll().subscribe(res => {
+        this.weathers = res;
+      });
+    });
+  }
+
 }

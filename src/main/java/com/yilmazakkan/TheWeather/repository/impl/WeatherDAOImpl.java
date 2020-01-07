@@ -37,16 +37,16 @@ public class WeatherDAOImpl implements WeatherDAO {
 
         String systemipaddress = "";
 
-            URL url_name = new URL("http://bot.whatismyipaddress.com");
+        URL url_name = new URL("http://bot.whatismyipaddress.com");
 
-            BufferedReader sc =
-                    new BufferedReader(new InputStreamReader(url_name.openStream()));
+        BufferedReader sc =
+                new BufferedReader(new InputStreamReader(url_name.openStream()));
 
-            // reads system IPAddress
-            systemipaddress = sc.readLine().trim();
-            
+        // reads system IPAddress
+        systemipaddress = sc.readLine().trim();
 
-            weather.setIp(systemipaddress);
+
+        weather.setIp(systemipaddress);
 
         // save user
 
@@ -86,5 +86,19 @@ public class WeatherDAOImpl implements WeatherDAO {
         List<Weather> weathers = theQuery.getResultList();
         // return the results
         return weathers;
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        // get the current hibernate session
+        Session currentSession = entityManager.unwrap(Session.class);
+
+        // delete object with primary key
+        Query theQuery =
+                currentSession.createQuery(
+                        "delete from Weather where id=:id");
+        theQuery.setParameter("id", id);
+
+        theQuery.executeUpdate();
     }
 }

@@ -6,7 +6,7 @@ import {Injectable} from "@angular/core";
   providedIn: 'root'
 })
 export class LogsService {
-  private LOGS_PATH = '/weathers';
+  private LOGS_PATH = 'weathers';
   constructor(private apiService: ApiService) {
   }
   getAllPageable(page): Observable<any> {
@@ -21,15 +21,9 @@ export class LogsService {
     ));
   }
   getAll(): Observable<any> {
-    return this.apiService.get(this.LOGS_PATH).pipe(map((
-      res => {
-        if (res) {
-          return res;
-        } else {
-          return {};
-        }
-      }
-    )));
+    return this.apiService.get(this.LOGS_PATH).pipe(map(
+      res => res.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime() )
+    ));
   }
   getById(id): Observable<any> {
     return this.apiService.get(this.LOGS_PATH, id).pipe(map(
@@ -44,7 +38,7 @@ export class LogsService {
     ));
   }
   delete(id): Observable<any> {
-    return this.apiService.delete(this.LOGS_PATH + '/' + id).pipe(map(
+    return this.apiService.delete(  this.LOGS_PATH +'/log/' + id).pipe(map(
       res => {
         if (res) {
           return res;
