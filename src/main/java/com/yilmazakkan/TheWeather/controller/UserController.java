@@ -1,7 +1,7 @@
 package com.yilmazakkan.TheWeather.controller;
 
 
-import com.yilmazakkan.TheWeather.entity.User;
+import com.yilmazakkan.TheWeather.dto.UserDto;
 import com.yilmazakkan.TheWeather.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,16 +19,16 @@ public class UserController {
 
     // expose "/users" and return list of users
     @GetMapping("/users")
-    public List<User> findAll() {
+    public List<UserDto> findAll() {
         return userService.findAll();
     }
 
     // add mapping for GET /users/{id}
 
     @GetMapping("/users/{id}")
-    public User getUser(@PathVariable long id) {
+    public UserDto getUser(@PathVariable long id) {
 
-        User user = userService.findById(id);
+        UserDto user = userService.findById(id);
 
         if (user == null) {
             throw new RuntimeException("User id not found - " + id);
@@ -40,21 +40,21 @@ public class UserController {
     // add mapping for POST /users - add new user
 
     @PostMapping("/users")
-    public User addUser(@RequestBody User user) {
+    public UserDto addUser(@RequestBody UserDto user) {
 
-
-        userService.save(user);
-
-        return user;
+        return userService.save(user);
+//        userService.save(user);
+//        return user;     bu şekilde yapınca postmande id null görünüyor db sorun yok
     }
 
     // add mapping for PUT /user - update existing user
 
     @PutMapping("/user/{id}")
-    public User userUpdate(@PathVariable long id, @RequestBody User user) {
+    public UserDto userUpdate(@PathVariable long id, @RequestBody UserDto user) {
 
-        userService.update(id, user);
-        return user;
+
+        return userService.update(id, user);
+
     }
 
     // add mapping for DELETE /users/{id} - delete user
@@ -62,7 +62,7 @@ public class UserController {
     @DeleteMapping("/users/{id}")
     public String deleteUser(@PathVariable long id) {
 
-        User user = userService.findById(id);
+        UserDto user = userService.findById(id);
 
         // throw exception if null
 

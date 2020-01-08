@@ -10,7 +10,9 @@ public interface UserDAO {
 
     public User findById(long id);
 
-    public void save(User user);
+    public User findByUsername(String username);
+
+    public User save(User user);
 
     public void deleteById(long id);
 

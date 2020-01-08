@@ -5,7 +5,6 @@ import com.yilmazakkan.TheWeather.entity.Weather;
 import com.yilmazakkan.TheWeather.service.WeatherService;
 import org.json.JSONException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;

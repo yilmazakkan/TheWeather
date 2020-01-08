@@ -8,20 +8,20 @@ public class UserRoles implements Serializable {
     @Id
     @Column(name = "id",insertable = false, updatable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     @Column(name = "role_name",insertable = false, updatable = false)
     private String role_name;
     @OneToMany(mappedBy="role")
     private List<User> user;
     public UserRoles() {
     }
-    public UserRoles(int id) {
+    public UserRoles(Long id) {
         this.id=id;
     }
-    public int getId() {
+    public Long getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
     public String getRole_name() {

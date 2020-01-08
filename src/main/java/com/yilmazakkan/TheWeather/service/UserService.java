@@ -1,18 +1,20 @@
 package com.yilmazakkan.TheWeather.service;
 
-import com.yilmazakkan.TheWeather.entity.User;
+import com.yilmazakkan.TheWeather.dto.UserDto;
 
 import java.util.List;
 
 public interface UserService {
 
-    public List<User> findAll();
+    public List<UserDto> findAll();
 
-    public User findById(long id);
+    public UserDto findById(long id);
 
-    public void save(User user);
+    public UserDto save(UserDto user);
 
     public void deleteById(long id);
 
-    public void update(long id, User user);
+    public UserDto update(long id, UserDto user);
+
+    public  UserDto findByUsername(String username);
 }

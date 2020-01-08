@@ -1,12 +1,17 @@
 package com.yilmazakkan.TheWeather.service.impl;
 
+import com.yilmazakkan.TheWeather.dto.UserDto;
 import com.yilmazakkan.TheWeather.entity.User;
+import com.yilmazakkan.TheWeather.entity.UserRoles;
 import com.yilmazakkan.TheWeather.repository.UserDAO;
+import com.yilmazakkan.TheWeather.repository.UserRoleDAO;
 import com.yilmazakkan.TheWeather.service.UserService;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -14,28 +19,48 @@ public class UserServiceImpl implements UserService {
 
     private UserDAO userDAO;
 
+    private ModelMapper modelMapper;
+
+
+    private UserRoleDAO userRoleDAO;
+
     @Autowired
-    public UserServiceImpl(UserDAO userDAO) {
+    public UserServiceImpl(UserDAO userDAO, ModelMapper modelMapper, UserRoleDAO userRoleDAO) {
+        this.userRoleDAO = userRoleDAO;
         this.userDAO = userDAO;
+        this.modelMapper = modelMapper;
     }
 
 
     @Override
     @Transactional
-    public List<User> findAll() {
-        return userDAO.findAll();
+    public List<UserDto> findAll() {
+        List<User> data = userDAO.findAll();
+        return Arrays.asList(modelMapper.map(data, UserDto[].class));
     }
 
     @Override
     @Transactional
-    public User findById(long id) {
-        return userDAO.findById(id);
+    public UserDto findById(long id) {
+        User u = userDAO.findById(id);
+        return modelMapper.map(u, UserDto.class);
     }
 
     @Override
     @Transactional
-    public void save(User user) {
-        userDAO.save(user);
+    public UserDto save(UserDto user) {
+
+        if (user != null) {
+            User userDb = modelMapper.map(user, User.class);
+            UserRoles roles = userRoleDAO.findById(user.getRoleId());
+            userDb.setRole(roles);
+
+            User UserDbSaved = userDAO.save(userDb);
+            if (UserDbSaved != null) {
+                return modelMapper.map(UserDbSaved, UserDto.class);
+            }
+        }
+        return user;
     }
 
 
@@ -45,14 +70,26 @@ public class UserServiceImpl implements UserService {
         userDAO.deleteById(id);
     }
 
-    @Override
-    @Transactional
-    public void update(long id, User user) {
-        userDAO.update(id, user);
-    }
+
 
     @Override
-    public User findByUsername(String username) {
-        return userDAO.findByUsername(username);
+    @Transactional
+    public UserDto update(long id, UserDto user) {
+
+        if (user != null) {
+            User userDb = modelMapper.map(user, User.class);
+            User userDbSaved = userDAO.update(id, userDb);
+            if (userDbSaved != null) {
+                return modelMapper.map(userDbSaved, UserDto.class);
+            }
+        }
+        return user;
+    }
+
+
+    @Override
+    public UserDto findByUsername(String username) {
+        User u = userDAO.findByUsername(username);
+        return modelMapper.map(u, UserDto.class);
     }
 }

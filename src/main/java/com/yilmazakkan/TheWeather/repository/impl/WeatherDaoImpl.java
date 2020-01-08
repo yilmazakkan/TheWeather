@@ -17,14 +17,14 @@ import javax.persistence.EntityManager;
 
 
 @Repository
-public class WeatherDAOImpl implements WeatherDAO {
+public class WeatherDaoImpl implements WeatherDAO {
 
     // define field for entitymanager
     private EntityManager entityManager;
 
     // set up constructor injection
     @Autowired
-    public WeatherDAOImpl(EntityManager theEntityManager) {
+    public WeatherDaoImpl(EntityManager theEntityManager) {
         entityManager = theEntityManager;
     }
 

@@ -54,18 +54,32 @@ public class UserDaoImpl implements UserDAO {
     }
 
     @Override
-    public void save(User user) {
+    public User findByUsername(String username) {
+        Session currentSession = entityManager.unwrap(Session.class);
+// create a query
+        Query theQuery =
+                currentSession.createQuery("select a from User a where a.userName =: username ", User.class);
+        theQuery.setParameter("username", username);
+// execute query and get result list
+        User user = (User) theQuery.list().get(0);
+// return the results
+        return user;
+    }
+
+    @Override
+    public User save(User user) {
 
 
         // get the current hibernate session
         Session currentSession = entityManager.unwrap(Session.class);
-        if (user.getRole()==null) {
-            UserRoles roles = new UserRoles(2);
+        if (user.getRole() == null) {
+            UserRoles roles = new UserRoles((long) 2);
             user.setRole(roles);
 
         }
         // save user
         currentSession.saveOrUpdate(user);
+        return user;
     }
 
 
