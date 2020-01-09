@@ -2,7 +2,6 @@ package com.yilmazakkan.TheWeather.repository.impl;
 
 import com.yilmazakkan.TheWeather.entity.User;
 
-import com.yilmazakkan.TheWeather.entity.UserRoles;
 import com.yilmazakkan.TheWeather.repository.UserDAO;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
@@ -73,8 +72,7 @@ public class UserDaoImpl implements UserDAO {
         // get the current hibernate session
         Session currentSession = entityManager.unwrap(Session.class);
         if (user.getRole() == null) {
-            UserRoles roles = new UserRoles((long) 2);
-            user.setRole(roles);
+            user.setRole("USER");
 
         }
         // save user

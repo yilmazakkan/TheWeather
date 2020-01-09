@@ -1,8 +1,5 @@
 package com.yilmazakkan.TheWeather.dto;
 
-import com.yilmazakkan.TheWeather.entity.UserRoles;
-
-
 
 public class UserDto {
 
@@ -12,19 +9,17 @@ public class UserDto {
 
     private String password;
 
-    private UserRoles role;
+    private String role;
 
-    private Long roleId;
 
     public UserDto() {
     }
 
-    public UserDto(Long id, String userName, String password, UserRoles role, Long roleId) {
+    public UserDto(Long id, String userName, String password, String role, Long roleId) {
         this.id = id;
         this.userName = userName;
         this.password = password;
         this.role = role;
-        this.roleId = roleId;
     }
 
     public Long getId() {
@@ -51,21 +46,14 @@ public class UserDto {
         this.password = password;
     }
 
-    public UserRoles getRole() {
+    public String getRole() {
         return role;
     }
 
-    public void setRole(UserRoles role) {
+    public void setRole(String role) {
         this.role = role;
     }
 
-    public Long getRoleId() {
-        return roleId;
-    }
-
-    public void setRoleId(Long roleId) {
-        this.roleId = roleId;
-    }
 
     @Override
     public String toString() {
@@ -74,7 +62,6 @@ public class UserDto {
                 ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", role=" + role +
-                ", roleId=" + roleId +
                 '}';
     }
 

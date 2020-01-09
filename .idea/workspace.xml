@@ -2,30 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abb19de5-ec0b-4eb5-907c-808a7fb40c70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_2_3_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/dto/WeatherDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/repository/UserRoleDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/repository/impl/UserRoleDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheWeather.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TheWeather.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/TheWeatherApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/TheWeatherApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/controller/WeatherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/entity/UserRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/entity/UserRoles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/repository/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/repository/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/entity/UserRoles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/repository/UserRoleDAO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/repository/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/repository/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/repository/impl/WeatherDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/repository/impl/WeatherDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/repository/impl/UserRoleDaoImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yilmazakkan/TheWeather/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/TheWeatherApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/TheWeatherApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/entity/UserRoles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/entity/UserRoles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/repository/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/repository/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/repository/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/repository/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yilmazakkan/TheWeather/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +45,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="webui" />
+        <entry key="$PROJECT_DIR$" value="DTO" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -188,7 +172,8 @@
       <workItem from="1578406736121" duration="2098000" />
       <workItem from="1578473309275" duration="258000" />
       <workItem from="1578475392507" duration="9640000" />
-      <workItem from="1578492132528" duration="304000" />
+      <workItem from="1578492132528" duration="1082000" />
+      <workItem from="1578550461369" duration="1760000" />
     </task>
     <task id="LOCAL-00001" summary="Entityler Repository Service Controller ve OpenWeather API çekme yapıldı.">
       <created>1576744095705</created>
@@ -253,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578481585306</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="DTO Eklendi">
+      <created>1578492493261</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578492493261</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +261,8 @@
     <MESSAGE value="Angular Weather and weathers log" />
     <MESSAGE value="Angular Delete Weather Logs and sort logs" />
     <MESSAGE value="findByUsername" />
-    <option name="LAST_COMMIT_MESSAGE" value="findByUsername" />
+    <MESSAGE value="DTO Eklendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="DTO Eklendi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="179" key="#Configure_Path_Variables" timestamp="1578473500943">
@@ -280,10 +273,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2472" y="178" key="#Inspections/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577099762938" />
-    <state x="-1155" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1578485451275">
+    <state x="-1155" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1578551179392">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1155" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578485451275" />
+    <state x="-1155" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578551179392" />
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578384399204" />
     <state x="2685" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577277170844" />
     <state x="2493" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1576741519390">
@@ -294,14 +287,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577195426783" />
-    <state x="2610" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576842923298">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2610" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576842923298" />
-    <state x="-1425" y="114" key="CommitChangelistDialog2" timestamp="1578492461557">
+    <state x="-1230" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578551081931">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1425" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578492461557" />
+    <state x="-1230" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578551081931" />
+    <state x="2610" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576842923298" />
+    <state x="-1425" y="114" key="CommitChangelistDialog2" timestamp="1578492491888">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1425" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578492491888" />
     <state x="495" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578481584133" />
     <state x="2415" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578063495788" />
     <state x="-1225" y="427" key="FileChooserDialogImpl" timestamp="1578380325047">
@@ -314,52 +308,52 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2753" y="413" width="531" height="214" key="Github.ShareDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576742658751" />
-    <state width="1877" height="543" key="GridCell.Tab.0.bottom" timestamp="1578492269460">
+    <state width="1877" height="209" key="GridCell.Tab.0.bottom" timestamp="1578551803533">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="543" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578492269459" />
+    <state width="1877" height="209" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578551803533" />
     <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578384412795" />
     <state width="1877" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578063528498" />
-    <state width="1877" height="543" key="GridCell.Tab.0.center" timestamp="1578492269459">
+    <state width="1877" height="209" key="GridCell.Tab.0.center" timestamp="1578551803533">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="543" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578492269459" />
+    <state width="1877" height="209" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578551803533" />
     <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578384412795" />
     <state width="1877" height="304" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578063528498" />
-    <state width="1877" height="543" key="GridCell.Tab.0.left" timestamp="1578492269459">
+    <state width="1877" height="209" key="GridCell.Tab.0.left" timestamp="1578551803533">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="543" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578492269459" />
+    <state width="1877" height="209" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578551803533" />
     <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578384412795" />
     <state width="1877" height="304" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578063528498" />
-    <state width="1877" height="543" key="GridCell.Tab.0.right" timestamp="1578492269459">
+    <state width="1877" height="209" key="GridCell.Tab.0.right" timestamp="1578551803533">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="543" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578492269459" />
+    <state width="1877" height="209" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578551803533" />
     <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578384412795" />
     <state width="1877" height="304" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578063528498" />
-    <state width="1877" height="543" key="GridCell.Tab.1.bottom" timestamp="1578492269460">
+    <state width="1877" height="209" key="GridCell.Tab.1.bottom" timestamp="1578551803533">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="543" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578492269460" />
+    <state width="1877" height="209" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578551803533" />
     <state width="1877" height="278" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578384412795" />
     <state width="1877" height="304" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578063528498" />
-    <state width="1877" height="543" key="GridCell.Tab.1.center" timestamp="1578492269460">
+    <state width="1877" height="209" key="GridCell.Tab.1.center" timestamp="1578551803533">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="543" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578492269460" />
+    <state width="1877" height="209" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578551803533" />
     <state width="1877" height="278" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578384412795" />
     <state width="1877" height="304" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578063528498" />
-    <state width="1877" height="543" key="GridCell.Tab.1.left" timestamp="1578492269460">
+    <state width="1877" height="209" key="GridCell.Tab.1.left" timestamp="1578551803533">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="543" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578492269460" />
+    <state width="1877" height="209" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578551803533" />
     <state width="1877" height="278" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578384412795" />
     <state width="1877" height="304" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578063528498" />
-    <state width="1877" height="543" key="GridCell.Tab.1.right" timestamp="1578492269460">
+    <state width="1877" height="209" key="GridCell.Tab.1.right" timestamp="1578551803533">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="543" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578492269460" />
+    <state width="1877" height="209" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578551803533" />
     <state width="1877" height="278" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578384412795" />
     <state width="1877" height="304" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578063528498" />
     <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1578317131874">
@@ -386,10 +380,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="162" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576744002546" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1578481588274">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1578492613033">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578403208441" />
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578492613033" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578481588274" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578063505944" />
     <state x="-1288" y="215" width="1076" height="754" key="dock-window-1" timestamp="1576847561752">

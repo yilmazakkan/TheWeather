@@ -2,9 +2,7 @@ package com.yilmazakkan.TheWeather.service.impl;
 
 import com.yilmazakkan.TheWeather.dto.UserDto;
 import com.yilmazakkan.TheWeather.entity.User;
-import com.yilmazakkan.TheWeather.entity.UserRoles;
 import com.yilmazakkan.TheWeather.repository.UserDAO;
-import com.yilmazakkan.TheWeather.repository.UserRoleDAO;
 import com.yilmazakkan.TheWeather.service.UserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,11 +20,9 @@ public class UserServiceImpl implements UserService {
     private ModelMapper modelMapper;
 
 
-    private UserRoleDAO userRoleDAO;
-
     @Autowired
-    public UserServiceImpl(UserDAO userDAO, ModelMapper modelMapper, UserRoleDAO userRoleDAO) {
-        this.userRoleDAO = userRoleDAO;
+    public UserServiceImpl(UserDAO userDAO, ModelMapper modelMapper) {
+
         this.userDAO = userDAO;
         this.modelMapper = modelMapper;
     }
@@ -52,8 +48,8 @@ public class UserServiceImpl implements UserService {
 
         if (user != null) {
             User userDb = modelMapper.map(user, User.class);
-            UserRoles roles = userRoleDAO.findById(user.getRoleId());
-            userDb.setRole(roles);
+
+            userDb.setRole("USER");
 
             User UserDbSaved = userDAO.save(userDb);
             if (UserDbSaved != null) {
