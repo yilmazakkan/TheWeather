@@ -8,7 +8,17 @@ import { FooterComponent } from './_layout/footer/footer.component';
 import { NavbarComponent } from './_layout/navbar/navbar.component';
 import { AppLayoutComponent } from './_layout/app-layout/app-layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {ApiService} from "./services/api.service";
+import {WeatherService} from "./services/shared/weather.service";
+import {LogsService} from "./services/shared/logs.service";
+import {AuthGuard} from "./security/auth.guard";
+import {JwtInterceptor} from "./security/jwt.interceptor";
+import {ErrorInterceptor} from "./security/authentication.interceptor";
+import {AuthenticationService} from "./security/authentication.service";
+import {LoginComponent} from "./login/login.component";
+import {RegisterComponent} from "./register/register.component";
 
 @NgModule({
   declarations: [
@@ -16,15 +26,27 @@ import {HttpClientModule} from "@angular/common/http";
     HeaderComponent,
     FooterComponent,
     NavbarComponent,
-    AppLayoutComponent
+    AppLayoutComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    ApiService,
+    WeatherService,
+    LogsService,
+    AuthenticationService,
+    AuthGuard,
+    {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
+    {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -5,7 +5,7 @@ public class UserDto {
 
     private Long id;
 
-    private String userName;
+    private String username;
 
     private String password;
 
@@ -15,9 +15,9 @@ public class UserDto {
     public UserDto() {
     }
 
-    public UserDto(Long id, String userName, String password, String role, Long roleId) {
+    public UserDto(Long id, String username, String password, String role, Long roleId) {
         this.id = id;
-        this.userName = userName;
+        this.username = username;
         this.password = password;
         this.role = role;
     }
@@ -30,12 +30,12 @@ public class UserDto {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -59,7 +59,7 @@ public class UserDto {
     public String toString() {
         return "UserDto{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
+                ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", role=" + role +
                 '}';

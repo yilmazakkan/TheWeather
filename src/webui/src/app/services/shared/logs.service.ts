@@ -6,7 +6,7 @@ import {Injectable} from "@angular/core";
   providedIn: 'root'
 })
 export class LogsService {
-  private LOGS_PATH = 'weathers';
+  private LOGS_PATH = '/weathers';
   constructor(private apiService: ApiService) {
   }
   getAllPageable(page): Observable<any> {

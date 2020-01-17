@@ -1,58 +1,53 @@
-<div class="content-wrapper">
-  <div class="sd">
-    <div class="sd">
-      <div class="sd">
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h2>Hava Durumu</h2>
-          </div>
-          <input aria-label="Search" class="form-control mr-sm-2" placeholder="Search" type="text"
-                 [(ngModel)]="filterText">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          <div class="panel-body">
-            <table class="table table-striped">
-              <thead>
-              <tr>
-                <th>id</th>
-                <th></th>
-                <th>Temperature</th>
-                <th>Country</th>
-                <th>City</th>
-                <th>Humidity</th>
-                <th>Pressure</th>
-                <th>Description</th>
-                <th>Sunrise Time</th>
-                <th>Sunset Time</th>
-                <th>Elapsed Time</th>
-                <th>Result</th>
-                <th>Ip Address</th>
-                <th>Create Date</th>
-                <th>Delete</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr *ngFor="let w of weathers | logsFilter:filterText ">
-                <td>{{w.id}}</td>
-                <td><img [src]="'http://openweathermap.org/img/w/' + w.icon + '.png'" class="mr-2"
-                         style="width: 75px"></td>
-                <td>{{w.temperature}}</td>
-                <td>{{w.country}}</td>
-                <td>{{w.city}}</td>
-                <td>% {{w.humidity}}</td>
-                <td>{{w.pressure}}</td>
-                <td>{{w.description}}</td>
-                <td>{{w.sunriseTime}}</td>
-                <td>{{w.sunsetTime}}</td>
-                <td>{{w.requestTime}} ms</td>
-                <td>{{w.result}}</td>
-                <td>{{w.ip}}</td>
-                <td>{{w.createdAt | date: 'dd.MM.yyyy H:mm'}}</td>
-                <th><button (click)="deleteLog(w.id)" class="btn btn-outline-danger my-2 my-sm-0">Delete </button></th>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+<div class="sd">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Hava Durumu</h2>
+    </div>
+    <div class="form-group">
+      <input class="form-control" id="filterByCity" placeholder="Enter a City" [(ngModel)]="filterText">
+      <small id="filterHelp" class="form-text text-muted">Enter a city name for filtering weather logs</small>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th></th>
+          <th>Country</th>
+          <th>City</th>
+          <th>Temperature</th>
+          <th>Humidity</th>
+          <th>Pressure</th>
+          <th>Description</th>
+          <th>Sunrise Time</th>
+          <th>Sunset Time</th>
+          <th>Elapsed Time</th>
+          <th>Result</th>
+          <th *ngIf="isAdmin">Ip Address</th>
+          <th>Created Date</th>
+          <th *ngIf="isAdmin">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let w of weathers | logsFilter:filterText">
+          <td><img [src]="'http://openweathermap.org/img/w/' + w.icon + '.png'" class="mr-2" style="width: 50px"></td>
+          <td>{{w.country}}</td>
+          <td>{{w.city}}</td>
+          <td>
+            {{w.temperature}} °C
+          </td>
+          <td>{{w.humidity}} %</td>
+          <td>{{w.pressure}} hpa</td>
+          <td>{{w.description}}</td>
+          <td>{{w.sunriseTime}}</td>
+          <td>{{w.sunsetTime}}</td>
+          <td>{{w.requestTime}} ms</td>
+          <td>{{w.result}}</td>
+          <td *ngIf="isAdmin" style="color: crimson">{{w.ip}}</td>
+          <td>{{w.createdAt | date:'dd.MM.yyyy H:mm'}}</td>
+          <th *ngIf="isAdmin"><button (click)="deleteLog(w.id)" class="btn btn-outline-danger my-2 my-sm-0">Delete </button></th>
+        </tr>
+        </tbody>
+      </table>
     </div>
   </div>
+</div>

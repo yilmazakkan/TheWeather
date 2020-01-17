@@ -57,7 +57,7 @@ public class UserDaoImpl implements UserDAO {
         Session currentSession = entityManager.unwrap(Session.class);
 // create a query
         Query theQuery =
-                currentSession.createQuery("select a from User a where a.userName =: username ", User.class);
+                currentSession.createQuery("select a from User a where a.username =: username ", User.class);
         theQuery.setParameter("username", username);
 // execute query and get result list
         User user = (User) theQuery.list().get(0);
@@ -103,9 +103,9 @@ public class UserDaoImpl implements UserDAO {
 
 
         Session currentSession = entityManager.unwrap(Session.class);
-        Query theQuery = currentSession.createQuery("update User  set password =:password,userName = :username where id =:id");
+        Query theQuery = currentSession.createQuery("update User  set password =:password,username = :username where id =:id");
         theQuery.setParameter("id", id);
-        theQuery.setParameter("username", user.getUserName());
+        theQuery.setParameter("username", user.getUsername());
         theQuery.setParameter("password", user.getPassword());
         theQuery.executeUpdate();
         return user;

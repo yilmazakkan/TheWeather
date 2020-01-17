@@ -1,5 +1,4 @@
 import {Component, Input, OnInit, ViewChild} from '@angular/core';
-import {MatSort} from "@angular/material/sort";
 import {Weather} from "../../common/weather";
 import {WeatherService} from "../../services/shared/weather.service";
 
@@ -13,7 +12,7 @@ export class WeatherComponent implements OnInit {
 
   weathers: Weather;
   visibleRrowIndex: number =null;
-  @Input() weather: Weather;
+
   cityName: string;
 
   constructor(private weatherService: WeatherService) { }
@@ -27,4 +26,6 @@ getWeather(city){
     console.log(res);
   });
 }
+
+
 }

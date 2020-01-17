@@ -1,11 +1,13 @@
 package com.yilmazakkan.TheWeather.service.impl;
 
 import com.yilmazakkan.TheWeather.dto.UserDto;
+import com.yilmazakkan.TheWeather.entity.RegistrationRequest;
 import com.yilmazakkan.TheWeather.entity.User;
 import com.yilmazakkan.TheWeather.repository.UserDAO;
 import com.yilmazakkan.TheWeather.service.UserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -19,14 +21,13 @@ public class UserServiceImpl implements UserService {
 
     private ModelMapper modelMapper;
 
+    private BCryptPasswordEncoder bCryptPasswordEncoder;
 
-    @Autowired
-    public UserServiceImpl(UserDAO userDAO, ModelMapper modelMapper) {
-
+    public UserServiceImpl(UserDAO userDAO, ModelMapper modelMapper, BCryptPasswordEncoder bCryptPasswordEncoder) {
         this.userDAO = userDAO;
         this.modelMapper = modelMapper;
+        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
     }
-
 
     @Override
     @Transactional
@@ -87,5 +88,17 @@ public class UserServiceImpl implements UserService {
     public UserDto findByUsername(String username) {
         User u = userDAO.findByUsername(username);
         return modelMapper.map(u, UserDto.class);
+    }
+    @Transactional
+    public Boolean register(RegistrationRequest registrationRequest) {
+        try {
+            User user = new User();
+            user.setPassword(bCryptPasswordEncoder.encode(registrationRequest.getPassword()));
+            user.setUsername(registrationRequest.getUsername());
+            userDAO.save(user);
+            return Boolean.TRUE;
+        } catch (Exception e) {
+            return Boolean.FALSE;
+        }
     }
 }

@@ -10,7 +10,7 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "username")
-    private String userName;
+    private String username;
     @Column(name = "pwd")
     private String password;
     @Column(name = "role")
@@ -23,12 +23,7 @@ public class User implements Serializable {
     public void setId(Long id) {
         this.id = id;
     }
-    public String getUserName() {
-        return userName;
-    }
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
+
     public String getPassword() {
         return password;
     }
@@ -40,20 +35,28 @@ public class User implements Serializable {
         return role;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
         return Objects.equals(id, user.id) &&
-                Objects.equals(userName, user.userName) &&
+                Objects.equals(username, user.username) &&
                 Objects.equals(password, user.password) &&
                 Objects.equals(role, user.role);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, userName, password, role);
+        return Objects.hash(id, username, password, role);
     }
 
     public void setRole(String role) {
@@ -64,7 +67,7 @@ public class User implements Serializable {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
+                ", userName='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", role='" + role + '\'' +
                 '}';

@@ -4,6 +4,7 @@ import { LogsComponent } from './logs.component';
 import {LogsRoutingModule} from "./logs.routing.module";
 import {FormsModule} from "@angular/forms";
 import { LogsFilterPipe } from './logs-filter.pipe';
+import {LogsService} from "../../services/shared/logs.service";
 
 
 
@@ -13,6 +14,9 @@ import { LogsFilterPipe } from './logs-filter.pipe';
     CommonModule,
     LogsRoutingModule,
     FormsModule
+  ],
+  providers: [
+    LogsService
   ]
 })
 export class LogsModule { }
