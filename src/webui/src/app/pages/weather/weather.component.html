@@ -11,11 +11,11 @@
 
              <input type="text" class="form-control" id="city" [(ngModel)]="cityName" name="city" placeholder="City Name" >
               <div class="input-group-append">
-              <button  class="btn btn-success" (click)="getWeather(cityName); visibleRrowIndex=0;">Get Weather</button>
+              <button  class="btn btn-success" (click)="getWeather(cityName); toggleDisplay()">Get Weather</button>
               </div>
 
             </div>
-            <div  class="panel-body">
+            <div  class="panel-body" *ngIf="isShow">
             <table class="table table-striped" id="titles">
               <thead>
               <tr>
